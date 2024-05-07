@@ -86,12 +86,14 @@ margin-bottom: 6px;
   }
 `;
 
-const CountCard = ({item}) =>{
+const CountCard = ({item , data}) =>{
     return(
         <Card>
             <Left>
                 <Title>{item.name}</Title>
-                <Value>12000
+                <Value>
+                   {/* {data && item.key && data[item.key]?.toFixed(2)} */}
+                   1200
                     <Unit>{item.unit}</Unit>
                     <Span positive>(+10%)</Span>
                 </Value>
